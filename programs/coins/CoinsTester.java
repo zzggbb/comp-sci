@@ -8,7 +8,7 @@ public class CoinsTester {
         
     public static void main(String[] args) {
     	
-		Coins money = new Coins(24);
+		Coins money = new Coins(107);
 		money.calculate();
     }
 }
