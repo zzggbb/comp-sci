@@ -1,3 +1,10 @@
+/* Name: 			Zane Bradley
+`* Program File: 	ParallelLines.java
+ * Purpose: 		Provide the constructor and draw() method for the 
+ *					ParallelLinesDriver class.
+ */
+
+
 import apcslib.*;
 import java.awt.Color;
 
