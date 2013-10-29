@@ -38,8 +38,8 @@ public class Vowels {
                 // 'v' vowel index of vowelcount
                 for (int i=0; i<line.length(); i++) {
                     for (int v=0; v<5; v++){
-                        String letter = line.charAt(i)+"").toLowerCase();
-                        if ((letter.equals(VOWELS[v])) {
+                        String letter = (line.charAt(i)+"").toLowerCase();
+                        if ((letter.equals(VOWELS[v]))) {
                             vowelCount[v]++;
                         }
                     }
@@ -50,7 +50,7 @@ public class Vowels {
             // looping through the contents of 'vowelCount' and 'VOWELS'
             output.write("\r\n");
             for (int v=0; v<5; v++) {
-                output.write("Count of"+VOWELS[v]+": "+vowelCount[v]+'\r\n');
+                output.write("Count of "+VOWELS[v]+": "+vowelCount[v]+"\r\n");
             }
 
             output.close();

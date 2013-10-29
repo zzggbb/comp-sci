@@ -31,9 +31,9 @@ I~just~eat~soup~and~mush.
 But~don't~be~sad.
 I'm~kind~of~glad--
 I'll~never~have~to~brush!
-
-Count for a: 31
-Count for e: 73
-Count for i: 23
-Count for o: 33
-Count for u: 29
+-|-|-|-|-|-|-|-|-|-|
+Count ofa: 31
+Count ofe: 73
+Count ofi: 23
+Count ofo: 33
+Count ofu: 29
