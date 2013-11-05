@@ -47,15 +47,9 @@ public class Vowels {
                 // increment the appropriate value of the 'letterCount' array.
                 for (int i=0; i<line.length(); i++) {
                     for (int v=0; v<5; v++){
-<<<<<<< HEAD
                         char letter = line.toLowerCase().charAt(i);
                         if (letter == LETTERS.charAt(v)) {
                             letterCount[v]++;
-=======
-                        String letter = (line.charAt(i)+"").toLowerCase();
-                        if ((letter.equals(VOWELS[v]))) {
-                            vowelCount[v]++;
->>>>>>> 19b9b8e4d22469b2439d9acc9ed07999e64d0778
                         }
                     }
                 }
@@ -66,11 +60,7 @@ public class Vowels {
             // and displaying a letter and its corresponding count.
             output.write("\r\n");
             for (int v=0; v<5; v++) {
-<<<<<<< HEAD
                 output.write("Count of "+LETTERS.charAt(v)+": "+letterCount[v]+"\r\n");
-=======
-                output.write("Count of "+VOWELS[v]+": "+vowelCount[v]+"\r\n");
->>>>>>> 19b9b8e4d22469b2439d9acc9ed07999e64d0778
             }
 
             output.close();
