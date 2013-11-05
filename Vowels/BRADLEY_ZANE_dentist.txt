@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 The~Dentist~Pulled~My~Tooth~Out
 by~Kenn~Nesbitt
 
@@ -38,44 +37,3 @@ Count of e: 73
 Count of i: 23
 Count of o: 33
 Count of u: 29
-=======
-The~Dentist~Pulled~My~Tooth~Out
-by~Kenn~Nesbitt
-
-
-The~dentist~pulled~my~tooth~out,
-and~he~thought~it~was~such~fun,
-he~grabbed~his~pliers
-and~dental~priers
-and~pulled~another~one.
-
-"Yippee!~Hooray!~What~awesome~fun!"
-he~shouted~out~with~glee.
-He~grinned~a~grin
-then~went~back~in
-and~pulled~out~number~three.
-
-Then~number~four~and~number~five
-and~numbers~six~and~seven
-were~followed~by
-a~cheerful~cry
-of~"Eight!~Nine!~Ten!~Eleven!"
-
-He~took~a~few~more~from~the~top
-and~some~from~underneath;
-he~yanked~them~fast
-until~at~last
-he'd~pulled~out~all~my~teeth.
-
-Without~my~teeth~I~cannot~chew;
-I~just~eat~soup~and~mush.
-But~don't~be~sad.
-I'm~kind~of~glad--
-I'll~never~have~to~brush!
--|-|-|-|-|-|-|-|-|-|
-Count ofa: 31
-Count ofe: 73
-Count ofi: 23
-Count ofo: 33
-Count ofu: 29
->>>>>>> 19b9b8e4d22469b2439d9acc9ed07999e64d0778
