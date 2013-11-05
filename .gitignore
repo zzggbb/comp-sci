@@ -1,3 +1,4 @@
 *.class
 .DS_STORE
 .DS_STORE?
+*.java~
