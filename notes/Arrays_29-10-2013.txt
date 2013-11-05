@@ -1,0 +1,42 @@
+#Arrays:
+ * arrays are a type of data structure
+ * it is a sequential list of the SAME type of data, eg:
+
+            String[] x = {"hello", "world"};
+            int[] x = {1,2,3,4,5};
+
+ * ##DECLARING ARRAYS
+
+            int[] x = new int[4]
+            x[0] = 1;
+            x[1] = 2;
+            x[2] = 3;
+            x[3] = 4;
+            // same as:
+            int[] x = {1,2,3,4};
+
+ * ##ACCESSING ARRAYS
+     * printing elements
+
+                String[] hi = {"hello","world"};
+                // print hello
+                SOP( hi[0] );
+
+     * looping through them
+
+                for(int index : arrayName) {
+                   SOP(index);
+                }
+
+ * arrays are special objects and so they have methods and data members
+
+ * arrays can contain other arrays, which can be accessed like so:
+
+            String[][] people = { {"zane","bradley"} , {"lil","b"} };
+            // print the names:
+            for(String[] person : people){
+                System.out.println( person[0] + "\'s last name is " + person[1] );
+            }
+            // outputs:
+            // zane's last name is bradley
+            // lil's last name is b

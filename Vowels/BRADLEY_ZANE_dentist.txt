@@ -32,8 +32,8 @@ But~don't~be~sad.
 I'm~kind~of~glad--
 I'll~never~have~to~brush!
 
-Count for a: 31
-Count for e: 73
-Count for i: 23
-Count for o: 33
-Count for u: 29
+Count of a: 31
+Count of e: 73
+Count of i: 23
+Count of o: 33
+Count of u: 29
