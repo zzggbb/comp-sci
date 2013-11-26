@@ -2,3 +2,5 @@
 .DS_STORE
 .DS_STORE?
 *.java~
+*.sublime-project
+*.sublime-workspace
