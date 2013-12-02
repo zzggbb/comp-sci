@@ -10,22 +10,27 @@ import java.io.FileWriter;
 
 public class Vowels {
     public static void main(String[] args) {
+
         final String INFILE  = "poetry.txt";
         final String OUTFILE = "BRADLEY_ZANE_dentist.txt";
         final String LETTERS = "aeiou";
         int[] letterCount    = new int[LETTERS.length()];
 
         try {
+
             // instantiate file io objects
             Scanner input = new Scanner(new File(INFILE));
             FileWriter output = new FileWriter(OUTFILE);
+
             // main loop
             // for every iteration of the loop, grap the next line, so long as
             // there is one, and do stuff with the line.
             while (input.hasNext()) {
                 String line = input.nextLine();
+
                 // Print the current line to the monitor
                 System.out.println(line);
+
                 // Write the current line to the output file, with all spaces
                 // converted to tildes (~) and '\r\n' appended to keep output
                 // consistent across *NIX, OSX and Windows.
@@ -55,6 +60,7 @@ public class Vowels {
                     }
                 }
             }
+
             // Sum up the findings of the letter counting code by simultaneously
             // looping through the contents of 'letterCount' and 'LETTERS' and
             // and displaying a letter and its corresponding count.
@@ -62,6 +68,7 @@ public class Vowels {
             for (int v=0; v<5; v++) {
                 output.write("Count of "+LETTERS.charAt(v)+": "+letterCount[v]+"\r\n");
             }
+
             output.close();
 
         } catch (Exception e) {
