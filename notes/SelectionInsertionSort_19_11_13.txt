@@ -1,0 +1,65 @@
+##SelectionInsertionSort:
+
+* ###compareTo() is a method a different classes can implement
+
+ * classes can't use '<' or '>' like primitives
+ * similar to `equals()` and `toString()`
+
+             public int compareTo(object otherThing)
+
+* ###Selection Sort:
+
+ * find the smallest value in an array of values from [i ... length-1]
+ * swap the smallest value with the value at index i
+ * increment i (look at less and less values each time)
+
+             4   1   35   21   76   2    99   23   64
+            *1   4   35   21   76   2    99   23   64
+            *1  *2   35   21   76   4    99   23   64
+            *1  *2  *4    21   76   35   99   23   64
+            *1  *2  *4   *21   76   35   99   23   64
+            *1  *2  *4   *21  *23   35   99   76   64
+            *1  *2  *4   *21  *23  *35   99   76   64
+            *1  *2  *4   *21  *23  *35  *64   76   99
+            *1  *2  *4   *21  *23  *35  *64  *76   99
+            *1  *2  *4   *21  *23  *35  *64  *76  *99
+
+        *not revisited
+
+            int i,j,iMin;
+            for ( j = 0; j < n-1; j++ ) {
+                iMin = j;
+                for ( i = j+1; i < n; i++ ) {
+                    if (a[i] < a[iMin]) {
+                        iMin = i;
+                    }
+                }
+                if ( iMin != j ) {
+                    swap(a[j], a[iMin]);
+                }
+            }
+* ###Insertion Sort:
+
+ * look at indexes from [0 ... i]
+ * swap element at head with element behind until head is in correct spot
+ * increase size of array (bring head to head)
+
+              5 4 3 9 2 4
+              4 5 3 9 2 4
+              4 3 5 9 2 4
+              3 4 5 9 2 4
+              3 4 5 2 9 4
+              3 4 2 5 9 4
+              3 2 4 5 9 4
+              2 3 4 5 9 4
+              2 3 4 5 4 9
+              2 3 4 4 5 9
+
+              int j,key,i;
+              for (j = 1; j < num.length; j++) {
+                  key = num[j];
+                  for(i = j-1; (i >= 0) && (num[i] < key); i--) {
+                      num[i+1] = num[i];
+                  }
+                  num[i+1] = key;
+              }
