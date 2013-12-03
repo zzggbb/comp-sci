@@ -31,6 +31,6 @@ public class Rectangle {
     }
 
     public String toString() {
-        return myW + " " + myL + " " + area();
+        return area() + "";
     }
 }

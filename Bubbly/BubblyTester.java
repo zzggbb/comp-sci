@@ -13,10 +13,10 @@ public class BubblyTester {
         // constants declaration
         final int SIZE = 10;
         final int MIN = 1;
-        final int MAX = 1000;
+        final int MAX = 10;
         final boolean VERBOSE = true;
         final String SEPARATE = " | ";
-        final String[] LABEL = {"index", "intArray", "rectArray (W,L,A)"};
+        final String[] LABEL = {"index", "intArray", "rectArray (Area)"};
 
         Random r = new Random();
         Bubbly b = new Bubbly();
