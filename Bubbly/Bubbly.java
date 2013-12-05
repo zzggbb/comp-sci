@@ -4,27 +4,11 @@
                 its arrays. Also provides the display method for displaying the
                 sorted and unsorted arrays.
 */
+import java.util.Random;
 
 public class Bubbly {
 
-    public void bubbleIntSort(int[] a) {
-        int k = 0;
-        boolean swapped = true;
-        while ((k < a.length - 1) && swapped) {
-            swapped = false;
-            k++;
-            for (int j = 0; j < a.length - k; j++) {
-                if (a[j] > a[j + 1]) {
-                    int temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
-                    swapped = true;
-                }
-            }
-        }
-    }
-
-    public void bubbleRectSort(Rectangle[] a) {
+    public void bubbleSort(ListObject[] a) {
         int k = 0;
         boolean swapped = true;
         while ((k < a.length - 1) && swapped) {
@@ -32,7 +16,7 @@ public class Bubbly {
             k++;
             for (int j = 0; j < a.length - k; j++) {
                 if ( a[j].compareTo(a[j + 1]) > 0 ) {
-                    Rectangle temp = a[j];
+                    ListObject temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
                     swapped = true;
@@ -41,13 +25,17 @@ public class Bubbly {
         }
     }
 
-    public void display(boolean v, String s, String[] w, String[] t) {
+    public void display(boolean v, String[] w, String[] t) {
         if (v) {
             for (int i=0; i<w.length; i++) {
                 System.out.printf("%-"+w[i].length()+"s", t[i]);
-                System.out.printf("%s",s);
+                System.out.print(" | ");
             }
             System.out.println();
         }
+    }
+
+    public int randomRange(int min, int max) {
+        return new Random().nextInt((max - min) + 1) + min;
     }
 }

@@ -14,18 +14,10 @@ public class Rectangle {
         myL = l;
     }
 
-    public Rectangle() {
-        myW = 1;
-        myL = 1;
-    }
-
     public int area() {
         return myW * myL;
     }
 
-    // rect1.compareTo(rect2):
-    // rect1 > rect2: +
-    // rect1 < rect2: -
     public int compareTo(Rectangle rect2) {
         return area() - rect2.area();
     }
