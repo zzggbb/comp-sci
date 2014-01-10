@@ -49,26 +49,22 @@ public class BubblyTester {
         System.out.println("Rectangle.equals() Demonstration: ");
         System.out.println();
 
-        Rectangle[] testRects = {
+        Rectangle[] equalsRectArray = {
             new Rectangle(4,7),
             new Rectangle(3,10),
             new Rectangle(4,7)
         };
 
-        for (int rectIndex = 0; rectIndex<testRects.length; rectIndex++) {
+        for (int rectIndex = 0; rectIndex<equalsRectArray.length; rectIndex++) {
             System.out.println("Rectangle " + (rectIndex + 1) + ":");
-            System.out.println("Length: " + testRects[rectIndex].getLength());
-            System.out.println("Width: " + testRects[rectIndex].getWidth());
+            System.out.println("Length: " + equalsRectArray[rectIndex].getLength());
+            System.out.println("Width: " + equalsRectArray[rectIndex].getWidth());
             System.out.println();
         }
-        for (int j = 0; j<testRects.length; j++) {
-            for (int k = 0; k<testRects.length; k++) {
-                System.out.print("Rectangle "
-                                 + (j+1)
-                                 + " compared to "
-                                 + (k+1)
-                                 + ": ");
-                System.out.println(testRects[j].equals(testRects[k]));
+        for (int j = 0; j<equalsRectArray.length; j++) {
+            for (int k = 0; k<equalsRectArray.length; k++) {
+                System.out.print("Rectangle " + (j+1) + " compared to " + (k+1) + ": ");
+                System.out.println(equalsRectArray[j].equals(equalsRectArray[k]));
             }
             System.out.println();
         }

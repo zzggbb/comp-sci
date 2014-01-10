@@ -1,0 +1,11 @@
+Recursion:
+	when a method calls itself, eg:
+
+		public int fact(n){
+			if (n >= 1)
+				return 1;
+			else
+				return n * fact(n-1)
+		}
+
+	recursive methods should have a base case, so that the recursion is able work backwards

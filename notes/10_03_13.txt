@@ -1,0 +1,51 @@
+* ##Strings:
+
+	* ###Declaration:
+
+		* Treated as an object:
+				String name = new String("hi");
+
+		* or with special syntax:
+				String name = "hi";
+
+			* Only strings have this shortcut
+
+	* ###Accessing them:
+
+		length() - returns number of characters
+
+		charAt() - returns a char at the 0-indexed position
+
+		indexOf() - returns first index at which a given string or char appears
+
+	* ###Modifying them:
+
+		toLowerCase()
+
+		toUpperCase()
+
+		trim()
+
+		* substring()
+
+			* if one argument, returns string from given index to end
+
+			* if two, returns string from given index to second given index
+
+	* ###Comparing them:
+
+		* equals() - test equality of two strings, case sensitive
+
+		* equalsIgnoreCase() - test equality of two strings, not case sensitive
+
+		* compareTo() - returns value of difference in ascii values for letters:
+
+				String name = "Matt";
+				n = name.compareTo("Maaa"); // n > 1
+
+	* Strings are immutable: meaning strings do NOT work with something like:
+
+			string = string.toLowerCase();
+
+
+#SONG IS TITLE SEQUENCE TO GAME OF THRONES

@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Bubbly {
 
-    public void bubbleSort(ListObject[] a) {
+    public void bubbleSort(Rectangle[] a) {
         int k = 0;
         boolean swapped = true;
         while ((k < a.length - 1) && swapped) {
@@ -16,7 +16,23 @@ public class Bubbly {
             k++;
             for (int j = 0; j < a.length - k; j++) {
                 if ( a[j].compareTo(a[j + 1]) > 0 ) {
-                    ListObject temp = a[j];
+                    Rectangle temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                    swapped = true;
+                }
+            }
+        }
+    }
+    public void bubbleSort(int[] a) {
+        int k = 0;
+        boolean swapped = true;
+        while ((k < a.length - 1) && swapped) {
+            swapped = false;
+            k++;
+            for (int j = 0; j < a.length - k; j++) {
+                if ( a[j] > a[j + 1] ) {
+                    int temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
                     swapped = true;
@@ -35,7 +51,7 @@ public class Bubbly {
         }
     }
 
-    public int randomRange(int min, int max) {
+    public int randRange(int min, int max) {
         return new Random().nextInt((max - min) + 1) + min;
     }
 }

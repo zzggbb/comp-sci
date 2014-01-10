@@ -1,0 +1,80 @@
+<h1>baseConversionsDecimal Binary:</h1>
+<h3>Main idea:</h3>
+<p>
+	any number can be represented by multiplying each digit by its base raised to the digits position, eg:
+</p>
+<p>
+			1001001<br>
+				in base 2:<br>
+					1 * 2^6 | 64<br>
+				+	0 * 2^5 | 0<br>
+				+	0 * 2^4 | 0<br>
+				+	1 * 2^3 | 8<br>
+				+	0 * 2^2 | 0<br>
+				+	0 * 2^1 | 0<br>
+				+	1 * 2^0 | 1<br>
+					------------<br>
+							| 73<br>
+				in base 10:<br>
+					1 * 10^6 | 1000000<br>
+				+	0 * 10^5 | 0<br>
+				+	0 * 10^4 | 0<br>
+				+	1 * 10^3 | 1000<br>
+				+	0 * 10^2 | 0<br>
+				+	0 * 10^1 | 0<br>
+				+	1 * 10^0 | 1<br>
+					------------------<br>
+						 	 | 1001001<br>
+
+</p>
+
+<h1>HexDecimalConversion:</h1>
+<h3>What I learned:</h3>
+<h5>converting from base16 to base10:</h5>
+<p>
+	A5C2 in base10:<br>
+		A * 16^3 | 40960<br>
+	+	5 * 16^2 | 1280<br>
+	+	C * 16^1 | 192<br>
+	+ 	2 * 16^0 | 2<br>
+	--------------------<br>
+				 | 42434<br>
+
+</p>
+
+<h5>converting from base10 to base16:</h5>
+<p>
+	134 in base16:<br>
+		    	8	6<br>
+	-----------------<br>
+	40960	256 16	1<br>
+
+</p>
+
+
+<h1>PrecedenceAssignmentOp:</h1>
+<h3>Main Idea:</h3>
+<h5>Assignment:</h5>
+<p>
+			x = x + 5 OR x+=5<br>
+			x = x - 5 OR x-=5<br>
+			x = x * 5 OR x*=5<br>
+			x = x / 5 OR x/=5<br>
+			x = x % 5 OR x%=5<br>
+			x = x + 1 OR ++x OR x++<br>
+			x = x - 1 OR --x OR x--<br>
+</p>
+
+<h5>postincrement vs preincrement:</h5>
+operators after the variable (x++, x--) will affect the number AFTER the assignment
+operators before the variable (++x, --x) will affect the number as it is assigned
+<p>
+		int x = 5, y = 5;<br>
+
+		System.out.println(++x); 	// outputs 6<br>
+		System.out.println(x); 		// outputs 6<br>
+<br>
+		System.out.println(y++); 	// outputs 5<br>
+		System.out.println(y); 		// outputs 6<br>
+
+</p>

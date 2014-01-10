@@ -29,8 +29,7 @@ public class Rectangle {
     }
 
     public boolean equals(Rectangle rhs) {
-        return (getWidth() == rhs.getWidth() &&
-                getLength() == rhs.getLength());
+        return (getWidth() == rhs.getWidth() && getLength() == rhs.getLength());
     }
 
     public String toString() {
