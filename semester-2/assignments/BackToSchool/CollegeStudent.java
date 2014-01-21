@@ -1,8 +1,8 @@
 /*
     Name: Zane Bradley
     File: CollegeStudent.java
-    Purpose: A derived class of Student, with additional methods for major and
-             year of college.
+    Purpose: Create a derived class of Student, with additional methods for
+             major and year of college.
 */
 
 public class CollegeStudent extends Student {

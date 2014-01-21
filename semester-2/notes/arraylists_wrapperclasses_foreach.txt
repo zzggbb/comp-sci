@@ -4,7 +4,7 @@
 
  * declaration:
 
-     * ArrayList<ClassName> arrayListName = new ArrayList<ClassName>(params);
+     * ArrayList <ClassName> arrayListName = new ArrayList <ClassName> (params);
 
      * a size for the array can be specified as a parameter
 
