@@ -1,4 +1,3 @@
-
 public class Movie extends AbstractFilm {
 
     public Movie(String name, String producer, String director, int year,

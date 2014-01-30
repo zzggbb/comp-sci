@@ -18,7 +18,7 @@ public class Teacher extends Person {
         mySubject = subject;
     }
     public Teacher(){
-        super();\
+        super();
         mySalary = 30000;
         mySubject = "";
     }
