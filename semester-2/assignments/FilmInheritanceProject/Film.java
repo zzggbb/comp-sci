@@ -5,12 +5,12 @@ public interface Film {
     public void setDirector(String director);
     public void setYear(int year);
     public void setActors(String[] actors);
-    public void setLength(double length);
+    public void setLength(int length);
 
     public String getName();
     public String getProducer();
     public String getDirector();
     public int getYear();
     public String[] getActors();
-    public double getLength();
+    public int getLength();
 }

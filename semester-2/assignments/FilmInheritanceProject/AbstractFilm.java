@@ -1,14 +1,11 @@
-import java.util.Arrays;
-
 public abstract class AbstractFilm implements Film {
 
     private String myName, myProducer, myDirector;
-    private int myYear;
+    private int myYear, myLength;
     private String[] myActors;
-    private double myLength;
 
     public AbstractFilm(String name, String producer, String director,
-                        int year, String[] actors, double length) {
+                        int year, String[] actors, int length) {
         myName = name;
         myProducer = producer;
         myDirector = director;
@@ -22,55 +19,44 @@ public abstract class AbstractFilm implements Film {
     public final void setDirector(String director){myDirector = director;}
     public final void setYear(int year){myYear = year;}
     public final void setActors(String[] actors){myActors = actors;}
-    public final void setLength(double length){myLength = length;}
+    public final void setLength(int length){myLength = length;}
 
     public final String getName(){return myName;}
     public final String getProducer(){return myProducer;}
     public final String getDirector(){return myDirector;}
     public final int getYear(){return myYear;}
     public final String[] getActors(){return myActors;}
-    public final double getLength(){return myLength;}
+    public final int getLength(){return myLength;}
 
     public String toString(){
-        return myName + ":\n" +
-            "\tProducer: " + myProducer + "\n" +
-            "\tDirector: " + myDirector + "\n" +
-            "\tYear: " + myYear + "\n" +
+        return getName() + ":\n" +
+            "\tProducer: " + getProducer() + "\n" +
+            "\tDirector: " + getDirector() + "\n" +
+            "\tYear: " + getYear() + "\n" +
             "\tActors: " + displayActors() + "\n" +
             "\tLength: " + formatLength() + "\n";
     }
 
     public String displayActors(){
-        StringBuffer result = new StringBuffer();
+        //StringBuffer result = new StringBuffer();
+        String result = "";
         String[] actors = getActors();
-        for (int i = 0; i < actors.length; i++) {
-            result.append(actors[i] + ", ");
+        for (int i = 0; i < actors.length-1; i++) {
+            //result.append(actors[i] + ", ");
+            result += actors[i] + ", ";
         }
+        //result.append(actors[actors.length-1]);
+        result += actors[actors.length-1];
         return result.toString();
     }
 
-    // length is given in minutes
-    // in: 92.5
-    // out "1:32:30"
-
-    /*
-        days = seconds / ( 24 * 60 * 60 )
-        seconds -= ( days * ( 24 * 60 * 60 ) )
-
-        hours = seconds / ( 60 * 60 )
-        seconds -= ( hours * ( 60 * 60 ) )
-
-        minutes = seconds / 60
-        seconds -= ( minutes * 60 )
-    */
     public String formatLength(){
-        double length = myLength;
+        int length = myLength;
         int hours = (int)length/60;
-        length -= hours;
+        length -= hours*60;
         int minutes = (int)length;
         length -= minutes;
-        int seconds = (int)length;
-        return hours + ": " + minutes + ": " + seconds;
+        return hours + ":" + minutes;
     }
 
 

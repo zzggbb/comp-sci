@@ -3,7 +3,7 @@ public class Movie extends AbstractFilm {
     private int myOscars;
 
     public Movie(String name, String producer, String director, int year,
-                String[] actors, double length, int oscars) {
+                String[] actors, int length, int oscars) {
         super(name, producer, director, year, actors, length);
         myOscars = oscars;
     }
