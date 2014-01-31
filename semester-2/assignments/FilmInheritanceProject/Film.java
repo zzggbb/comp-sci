@@ -1,11 +1,11 @@
 public interface Film {
 
-    public void setName();
-    public void setProducer();
-    public void setDirector();
-    public void setYear();
-    public void setActors();
-    public void setLength();
+    public void setName(String name);
+    public void setProducer(String producer);
+    public void setDirector(String director);
+    public void setYear(int year);
+    public void setActors(String[] actors);
+    public void setLength(double length);
 
     public String getName();
     public String getProducer();
