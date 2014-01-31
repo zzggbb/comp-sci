@@ -1,3 +1,8 @@
+/*
+    Program: Movie.java
+    Purpose: Provide an object that can be usd to represent a movie
+*/
+
 public class Movie extends AbstractFilm {
 
     private int myOscars;

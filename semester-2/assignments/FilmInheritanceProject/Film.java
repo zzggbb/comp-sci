@@ -1,3 +1,9 @@
+/*
+    Program: Film.java
+    Purpose: A common interface that the AbstractFilm class
+             implements to represent a film.
+*/
+
 public interface Film {
 
     public void setName(String name);

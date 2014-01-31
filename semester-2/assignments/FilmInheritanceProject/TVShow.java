@@ -1,3 +1,8 @@
+/*
+    Program: TVShow.java
+    Purpose: Provide an object that can be usd to represent a television show
+*/
+
 public class TVShow extends AbstractFilm {
 
     private int mySeasons, myEpisodes, myEmmys;

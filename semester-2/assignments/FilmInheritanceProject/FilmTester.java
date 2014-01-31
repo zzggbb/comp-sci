@@ -1,3 +1,11 @@
+/*
+    Program: FilmTester.java
+    Purpose: Show off the uses of the Movie and TVShow objects
+             by displaying them
+             Demonstrate polymorphism through the use of methods
+             like AbstractFilm.getName() that are resolved at runtime
+*/
+
 public class FilmTester {
     public static void main(String[] args){
         AbstractFilm[] films = {
