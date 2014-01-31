@@ -1,6 +1,7 @@
 /*
     Program: Movie.java
-    Purpose: Provide an object that can be usd to represent a movie
+    Purpose: Provide an object that can be usd to represent a movie.
+             A child class of the parent AbstractFilm.
 */
 
 public class Movie extends AbstractFilm {

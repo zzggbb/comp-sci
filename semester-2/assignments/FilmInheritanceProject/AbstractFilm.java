@@ -1,3 +1,10 @@
+/*
+    Program: AbstractFilm.java
+    Purpose: An abstract class that implements the Film interface
+             Create final methods that derived classes cannot change,
+             and abstract classes that will differ between derived classes.
+*/
+
 public abstract class AbstractFilm implements Film {
 
     private String myName, myProducer, myDirector;

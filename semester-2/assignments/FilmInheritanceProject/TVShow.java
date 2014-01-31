@@ -1,6 +1,7 @@
 /*
     Program: TVShow.java
-    Purpose: Provide an object that can be usd to represent a television show
+    Purpose: Provide an object that can be usd to represent a television show.
+             A child class of the parent AbstractFilm.
 */
 
 public class TVShow extends AbstractFilm {
