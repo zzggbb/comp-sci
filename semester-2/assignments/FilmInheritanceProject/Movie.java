@@ -7,12 +7,19 @@ public class Movie extends AbstractFilm {
         super(name, producer, director, year, actors, length);
         myOscars = oscars;
     }
+    public Movie(){
+        super();
+        myOscars = 0;
+    }
 
     public void setOscars(int oscars){myOscars = oscars;}
     public int getOscars(){return myOscars;}
 
     public String toString(){
-        return super.toString() +
-        "\tOscars: " + myOscars + "\n";
+        return "The Movie " + super.toString() +
+        "\tOscars: " + getOscars() + "\n";
+    }
+    public int awards(){
+        return getOscars();
     }
 }

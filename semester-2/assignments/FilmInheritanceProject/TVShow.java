@@ -3,12 +3,18 @@ public class TVShow extends AbstractFilm {
     private int mySeasons, myEpisodes, myEmmys;
 
     public TVShow(String name, String producer, String director, int year,
-                      String[] actors, int length, int seasons,
-                      int episodes, int emmys) {
+                  String[] actors, int length, int seasons, int episodes,
+                  int emmys) {
         super(name, producer, director, year, actors, length);
         mySeasons = seasons;
         myEpisodes = episodes;
         myEmmys = emmys;
+    }
+    public TVShow(){
+        super();
+        mySeasons = 0;
+        myEpisodes = 0;
+        myEmmys = 0;
     }
 
     public void setSeasons(int season){mySeasons = season;}
@@ -20,9 +26,12 @@ public class TVShow extends AbstractFilm {
     public int getEmmys(){return myEmmys;}
 
     public String toString(){
-        return super.toString() +
+        return "The TV Show " + super.toString() +
         "\tSeasons: "+ getSeasons() + "\n" +
         "\tEpisodes: " + getEpisodes() + "\n" +
-        "\tEmmys: " + getEmmys + "\n";
+        "\tEmmys: " + getEmmys() + "\n";
+    }
+    public int awards(){
+        return getEmmys();
     }
 }
