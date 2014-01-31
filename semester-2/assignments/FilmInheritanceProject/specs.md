@@ -10,21 +10,24 @@ illustrated correctly.
 ##Details
 
 ###the interface:
-    this should be a set of methods that describe the behavior you want any
-    class that implements your interface to have.  It is appropriate for
-    any constants used in implementing classes to be declared and
-    initialized here.
+
+this should be a set of methods that describe the behavior you want any
+class that implements your interface to have.  It is appropriate for
+any constants used in implementing classes to be declared and
+initialized here.
 
 ###the abstract class:
-    this class should contain instance variables and implemented methods that
-    are common to any derived class but will not be abstract if all of the
-    methods required from the interface are implemented.
+
+this class should contain instance variables and implemented methods that
+are common to any derived class but will not be abstract if all of the
+methods required from the interface are implemented.
 
 ###two derived classes:
 
-    these classes should be fully implemented, maximizing use of the
-    already-written code from the parent class.  Make two different logical
-    subclasses from the abstract class described above.
+these classes should be fully implemented, maximizing use of the
+already-written code from the parent class.  Make two different logical
+subclasses from the abstract class described above.
 
 ###the driver:
-    use your classes as appropriate and “show off” as many features as you can.
+
+use your classes as appropriate and “show off” as many features as you can.
