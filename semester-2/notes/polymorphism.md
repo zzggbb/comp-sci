@@ -8,6 +8,6 @@
 
   * they can be used as the type, eg:
 
-    abstract class Animal {}
-    ...
-    Animal x = new Dog();
+          abstract class Animal {}
+          ...
+          Animal x = new Dog();
