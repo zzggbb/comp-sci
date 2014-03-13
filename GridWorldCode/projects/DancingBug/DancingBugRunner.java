@@ -2,7 +2,7 @@
  * Name: Zane Bradley
  * File: DancingBugRunner.java
  *
- * create a world that contains a FigureEightBug
+ * create a world that contains a DancingBug
  */
 
 import info.gridworld.actor.ActorWorld;
