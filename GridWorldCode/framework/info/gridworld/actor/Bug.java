@@ -103,3 +103,7 @@ public class Bug extends Actor
         // not ok to move onto any other actor
     }
 }
+/**
+ * This class runs a world that contains box bugs. <br />
+ * This class is not tested on the AP CS A and AB exams.
+ */
