@@ -1,0 +1,55 @@
+//: Scheme missing.
+--2014-03-20 23:56:07--  ftp://name/
+           => ‘.listing’
+Resolving name (name)... 67.215.65.132
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-20 23:58:15--  ftp://name/
+  (try: 2) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:00:25--  ftp://name/
+  (try: 3) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:02:35--  ftp://name/
+  (try: 4) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:04:46--  ftp://name/
+  (try: 5) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:06:59--  ftp://name/
+  (try: 6) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:09:12--  ftp://name/
+  (try: 7) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:11:26--  ftp://name/
+  (try: 8) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:13:42--  ftp://name/
+  (try: 9) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:15:58--  ftp://name/
+  (try:10) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... failed: Connection timed out.
+Retrying.
+
+--2014-03-21 00:18:15--  ftp://name/
+  (try:11) => ‘.listing’
+Connecting to name (name)|67.215.65.132|:21... 

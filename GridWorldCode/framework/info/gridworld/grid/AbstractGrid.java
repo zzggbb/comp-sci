@@ -1,28 +1,10 @@
-/* 
- * AP(r) Computer Science GridWorld Case Study:
- * Copyright(c) 2005-2006 Cay S. Horstmann (http://horstmann.com)
- *
- * This code is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation.
- *
- * This code is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * @author Cay Horstmann
- */
+
 
 package info.gridworld.grid;
 
 import java.util.ArrayList;
 
-/**
- * <code>AbstractGrid</code> contains the methods that are common to grid
- * implementations. <br />
- * The implementation of this class is testable on the AP CS AB exam.
- */
+
 public abstract class AbstractGrid<E> implements Grid<E>
 {
     public ArrayList<E> getNeighbors(Location loc)
@@ -70,12 +52,7 @@ public abstract class AbstractGrid<E> implements Grid<E>
         return locs;
     }
 
-    /**
-     * Creates a string that describes this grid.
-     * @return a string with descriptions of all objects in this grid (not
-     * necessarily in any particular order), in the format {loc=obj, loc=obj,
-     * ...}
-     */
+    
         public String toString()
         {
             String s = "{";

@@ -1,0 +1,39 @@
+modify the processActors method in ChameleonCritter so that 
+if the list of actors to process is empty, the color of the 
+ChameleonCritter will darken (like a flower)
+
+create a class called ChameleonKid that entends 
+ChameleonCritter  as modified in exercise 1. A ChameleonKid
+changes its color to the color of one of the actors 
+immediately in front or behind. If there are no actors in 
+either of these locations, then the ChameleonKid darkens 
+like the modified ChameleonCritter.
+
+create a class called RockHound that extends Critter. A 
+RockHound gets the actors to be processed in the same way 
+as a Critter. It removes any rocks in that list from the 
+grid. A RockHound moves like a Critter.
+
+Create a class called BlusterCritter that extends Critter. 
+A BlusterCritter looks at all of the neighbors within two 
+steps of its current location. It counts the number of 
+critters in those locations. If there are fewer than `c` 
+critters, the BlusterCritter's color gets brighter. If there 
+are`c` or more critters, the BlusterCritter's color darkens. 
+`c` is a value that indicates courage and should be set in 
+the constructor
+
+create a calss called QuickCrab that extends CrabCritter. A
+QuickCritter processess actors in the same way a CrabCritter
+does. A QuickCrab moves to one of the two locations, 
+randomly selected, that are two spaces to its right or left,
+if that location and the inbetween location are both empty. 
+Otherwise, a QuickCrab moves like a CrabCritter.
+
+Create a class called KingCrab that extends CrabCritter. A 
+KingCrab gets the actors to be processed in the same way a 
+CrabCritter does. A KingCrab causes each actor that it 
+processes to move one location further away from the 
+KingCrab if the actor cannot move away, the actor should 
+`removeSelfFromGrid()`. When the KingCrab has completed 
+processing the actors, it moves like a CrabCritter.
