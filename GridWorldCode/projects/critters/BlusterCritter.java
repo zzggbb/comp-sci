@@ -27,7 +27,9 @@ public class BlusterCritter extends Critter {
 	   Location center = getLocation();
 	   int cX = center.getRow();
 	   int cY = center.getCol();
-	   for (int x=cX-2 ; x<cX+3 ; x++){
+	   
+        // check every location within 2 spaces of our `center`
+        for (int x=cX-2 ; x<cX+3 ; x++){
 	       for (int y=cY-2 ; y<cY+3 ; y++){
 		      Location cLoc = new Location(x,y);
 			 if(getGrid().isValid(cLoc) && !(cLoc.equals(center))){
@@ -44,6 +46,7 @@ public class BlusterCritter extends Critter {
             (int)(c.getGreen()+deltaRGB),
             (int)(c.getBlue()+deltaRGB)
         }
+        // verify that the color isn't above 255 or below 0
 	   for (int i=0; i<colors.length(); i++){
             if (colors[i] < 0){
                 colors[i] = 0;

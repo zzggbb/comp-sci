@@ -1,3 +1,11 @@
+/* Name: Zane Bradley
+ * File: ChameleonKid
+ * Desc: A ChameleonKid only processes the actors immediately in front and
+ *       behind it. It then chooses the first possible neighbor and 
+ *       changes its own color to the color of the chosen neighbor. 
+ *
+ */
+
 import java.util.ArrayList;
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Location;
@@ -23,7 +31,7 @@ public class ChameleonKid extends ChameleonCritter {
 	public void processActors(ArrayList<Actor> actors){
 		int n = actors.size();
 		if (n==0){
-			super.darken(0.05);
+			super.darken(10);
 		} else {
 			setColor(actors.get(0).getColor());
 		}

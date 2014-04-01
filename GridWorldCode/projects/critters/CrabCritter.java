@@ -1,3 +1,9 @@
+/* Name: Zane Bradley
+ * File: CrabCritter.java
+ * Desc: A CrabCritter
+ *
+ */
+
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Critter;
 import info.gridworld.grid.Grid;
