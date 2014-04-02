@@ -17,44 +17,44 @@ public class BlusterCritter extends Critter {
 	
     private int c;
 
-    public BlusterCritter(int courage){
-        super();
-	   c = courage;
+	public BlusterCritter(int courage){
+    	super();
+		c = courage;
     }
 	
     public ArrayList<Actor> getActors(){
-        ArrayList<Actor> neighbors = new ArrayList<Actor>();
-	   Location center = getLocation();
-	   int cX = center.getRow();
-	   int cY = center.getCol();
+    	ArrayList<Actor> neighbors = new ArrayList<Actor>();
+	   	Location center = getLocation();
+	   	int cX = center.getRow();
+	   	int cY = center.getCol();
 	   
         // check every location within 2 spaces of our `center`
         for (int x=cX-2 ; x<cX+3 ; x++){
 	       for (int y=cY-2 ; y<cY+3 ; y++){
-		      Location cLoc = new Location(x,y);
-			 if(getGrid().isValid(cLoc) && !(cLoc.equals(center))){
-			     neighbors.add(getGrid().get(cLoc));
-			 }
-		  } 
-	   }
-	   return neighbors;
+		   Location cLoc = new Location(x,y);
+			 	if(getGrid().isValid(cLoc) && !(cLoc.equals(center))){
+			     	neighbors.add(getGrid().get(cLoc));
+			 	}
+			} 
+	   	}
+	   	return neighbors;
     }
     public void darken(double deltaRGB){
-	   Color c = getColor();
-	   int[] colors = {
+		Color c = getColor();
+		int[] colors = {
             (int)(c.getRed()+deltaRGB),
             (int)(c.getGreen()+deltaRGB),
             (int)(c.getBlue()+deltaRGB)
-        }
+        };
         // verify that the color isn't above 255 or below 0
-	   for (int i=0; i<colors.length(); i++){
+	   for (int i=0; i<colors.length; i++){
             if (colors[i] < 0){
                 colors[i] = 0;
-            } else if(colors[i] > 255 {
+            } else if(colors[i] > 255) {
                 colors[i] = 255;
             }
         }
-	   setColor(new Color(colors[0],colors[1],color[2]));
+	   setColor(new Color(colors[0],colors[1],colors[2]));
 	   System.out.println("Changed color");	
     }
 
