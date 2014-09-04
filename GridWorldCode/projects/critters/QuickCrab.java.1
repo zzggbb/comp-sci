@@ -21,11 +21,11 @@ public class QuickCrab extends CrabCritter {
 		for(int cDir : dirs) {
 			Location side = getLocation().getAdjacentLocation(cDir);
 			// check immediately to left and right.
-            if(getGrid().isValid(side) && getGrid().get(side) == null){
+               if(getGrid().isValid(side) && getGrid().get(side) == null){
 				// check the spaces that are 2 units away.
-                Location sideSide = side.getAdjacentLocation(cDir);
+                    Location sideSide = side.getAdjacentLocation(cDir);
 				// add them if they are empty and are valid.
-                if(getGrid().isValid(sideSide) &&  getGrid().get(sideSide) == null){
+                    if(getGrid().isValid(sideSide) &&  getGrid().get(sideSide) == null){
 					locs.add(sideSide);
 				}
 			}

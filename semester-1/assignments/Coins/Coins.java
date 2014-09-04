@@ -1,10 +1,11 @@
-// name:  		Coins.java
-//
-// program: 	CoinsTester
-//
-// purpose:		This class accepts a certain number of monetary change. The output is a list of the number 
-//				of quarters, dimes, nickels, and pennies that will make that amount of change with the least 			
-// 				number of coins possible.
+/* 
+name:  		Coins.java
+program: 	CoinsTester
+purpose:	This class accepts a certain number of monetary change. The output 
+            is a list of the number of quarters, dimes, nickels, and pennies 
+            that will make that amount of change with the least number of coins 
+            possible.
+*/
 	 
 public class Coins {
 
