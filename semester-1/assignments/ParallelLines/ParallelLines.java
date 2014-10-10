@@ -52,7 +52,7 @@ public class ParallelLines {
                 int wiggle = offsets[modrow]*config[1];
                 int x = (col*(config[0]+config[2])-xOffset) + wiggle;
                 int y = row*config[2]-yOffset;
-				pen.move(x,y);
+                pen.move(x,y);
 				pen.down();
 				pen.setColor(Color.black);
 				pen.fillRect(config[2],config[2]);
